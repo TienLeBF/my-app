@@ -4,21 +4,20 @@ class Square extends React.Component {
         super(props);
         console.log(props)
     }
-    componentDidUpdate(){
-       // console.log("did update LOL")
-        //console.log(this.props)
+    componentDidUpdate() {
+        console.log("in update");
     }
-    componentDidMount(){
+    componentDidMount() {
         // console.log("did mount LOL")
         // console.log(this.props)
     }
-    componentWillReceiveProps(){
+    componentWillReceiveProps() {
         // console.log("VCLLLLLLLLLLLLLLLL")
     }
     render() {
-        
+
         return (
-            <button className="square" onClick={this.props.onclick}>
+            <button className="square" onClick={this.props.onClick}>
                 {this.props.value}
 
             </button>
